@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 3</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="cabecalho">Olá! Bem vindo ao exercício 3.</h1>
+        <img src="./img/Darth Vader.jpeg" alt="Uma foto do Darth Vader" title="Darth Vader - Dark Side">
+    </div>
+
+    <script>
+        function calculaMaiorNumero() {
+            alert("Digite 3 valores para verificar qual o maior deles.")
+
+            let contador = 1
+            let maiorNumero = 0
+
+            while (contador <= 3) {
+                let valor = prompt("Digite o " + contador + " valor: ");
+                valorConvertido = parseFloat(valor);
+                if (valorConvertido > maiorNumero) {
+                    maiorNumero = valor;
+                }
+                contador = contador + 1;
+            }
+            return maiorNumero;
+        }
+
+        const maiorNumero = calculaMaiorNumero();
+        alert("O maior número é: " + maiorNumero)
+        console.log("O maior número é: " + maiorNumero);
+    </script>
+</body>
+
+</html>

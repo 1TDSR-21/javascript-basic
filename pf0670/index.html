@@ -2,36 +2,31 @@
 <html>
 
 <head lang="pt-br">
-  <meta charset="utf-8">
-  <title>Teste Page</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-
-
-
+    <meta charset="utf-8">
+    <title>Teste Page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <h1 id="cabecalho">Mozilla da hora</h1>
-  <img src="img/firefox-icon.png" alt="Firefox logo: a chama que envolve a Terra.">
+    <h1 id="cabecalho">Mozilla da hora</h1>
+    <img src="img/firefox-icon.png" alt="Firefox logo: a chama que envolve a Terra.">
 
-  <p>Mozilla, comunidade global de</p>
+    <p>Mozilla, comunidade global de</p>
 
-  <ul>
-    <li>tecnologistas</li>
-    <li>pensadores</li>
-    <li>construtores</li>
-  </ul>
+    <ul>
+        <li>tecnologistas</li>
+        <li>pensadores</li>
+        <li>construtores</li>
+    </ul>
 
-  <p>Trabalhamos juntos para manter a internet viva e acessível, para que as pessoas em todo o mundo possam ser
-    contribuidores informados e criadores da web. Acreditamos que este ato de colaboração humana em uma plataforma
-    aberta é essencial para o crescimento indivídual e o nosso futuro coletivo.</p>
+    <p>Trabalhamos juntos para manter a internet viva e acessível, para que as pessoas em todo o mundo possam ser contribuidores informados e criadores da web. Acreditamos que este ato de colaboração humana em uma plataforma aberta é essencial para o crescimento
+        indivídual e o nosso futuro coletivo.</p>
 
-  <p>Leia o <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> para aprender mais
-    sobre os valores e os principios que guiam a busca de nossa missão.</p>
+    <p>Leia o <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> para aprender mais sobre os valores e os principios que guiam a busca de nossa missão.</p>
 
-  <script>
-    //Comentário de linha
-    /*
+    <script>
+        //Comentário de linha
+        /*
         Comentário de Bloco
       
   
@@ -48,30 +43,30 @@
       console.log("Valor da variável x: " + x);
       */
 
-    var exemplo1;
-    console.log("Valor de exemplo1 : " + exemplo1);
-    let exemplo2;
-    console.log("Valor de exemplo2 : " + exemplo2);
-    const exemplo3 = "";
-    console.log("Valor de exemplo3 : " + exemplo3);
+        var exemplo1;
+        console.log("Valor de exemplo1 : " + exemplo1);
+        let exemplo2;
+        console.log("Valor de exemplo2 : " + exemplo2);
+        const exemplo3 = "";
+        console.log("Valor de exemplo3 : " + exemplo3);
 
 
-    //HOISTING
-    nome = "TESTE"
-    var nome;
+        //HOISTING
+        nome = "TESTE"
+        var nome;
 
 
-    const cabecalho = document.querySelector('#cabecalho');
-    cabecalho.textContent = 'Olá Mundo!';
+        const cabecalho = document.querySelector('#cabecalho');
+        cabecalho.textContent = 'Olá Mundo!';
 
-    //Atrelando um evento de click no elemento cabeçalho.
-    cabecalho.addEventListener('click', escreve);
+        //Atrelando um evento de click no elemento cabeçalho.
+        cabecalho.addEventListener('click', escreve);
 
-    function escreve() {
-      var texto = prompt('Digite um novo texto para o título');
-      cabecalho.textContent = texto;
-    }
-  </script>
+        function escreve() {
+            var texto = prompt('Digite um novo texto para o título');
+            cabecalho.textContent = texto;
+        }
+    </script>
 
 </body>
 

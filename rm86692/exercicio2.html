@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 2</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="cabecalho">Olá! Bem vindo ao exercício 2.</h1>
+        <img src="./img/Darth Vader.jpeg" alt="Uma foto do Darth Vader" title="Darth Vader - Dark Side">
+    </div>
+
+    <script>
+        function calculaIMC(peso, altura) {
+            return peso / (altura * altura);
+        }
+
+        alert("Digite seu peso e sua altura para ser calculado seu IMC.")
+        let peso = prompt("Digite seu peso em kgs: ");
+        let altura = prompt("Digite sua altura em metros: ");
+
+        pesoConvertido = parseFloat(peso);
+        alturaConvertida = parseFloat(altura);
+
+        console.log("O seu IMC é: " + calculaIMC(pesoConvertido, alturaConvertida));
+    </script>
+</body>
+
+</html>
