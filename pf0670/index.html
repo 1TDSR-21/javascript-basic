@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>Teste Page</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
-
-
+  <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -28,50 +26,6 @@
 
   <p>Leia o <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> para aprender mais
     sobre os valores e os principios que guiam a busca de nossa missão.</p>
-
-  <script>
-    //Comentário de linha
-    /*
-        Comentário de Bloco
-      
-  
-      //Declaração de variáveis
-      var nr1 = 0;
-      var nome = "Samuka";
-      nr1 = nome;
-  
-      //Funçao interna console, podemos escreve no console do borwser com ela.
-      console.log("Valor da variável : " + nr1);
-      var y = 1;
-      var x = y, y = 0;
-  
-      console.log("Valor da variável x: " + x);
-      */
-
-    var exemplo1;
-    console.log("Valor de exemplo1 : " + exemplo1);
-    let exemplo2;
-    console.log("Valor de exemplo2 : " + exemplo2);
-    const exemplo3 = "";
-    console.log("Valor de exemplo3 : " + exemplo3);
-
-
-    //HOISTING
-    nome = "TESTE"
-    var nome;
-
-
-    const cabecalho = document.querySelector('#cabecalho');
-    cabecalho.textContent = 'Olá Mundo!';
-
-    //Atrelando um evento de click no elemento cabeçalho.
-    cabecalho.addEventListener('click', escreve);
-
-    function escreve() {
-      var texto = prompt('Digite um novo texto para o título');
-      cabecalho.textContent = texto;
-    }
-  </script>
 
 </body>
 
